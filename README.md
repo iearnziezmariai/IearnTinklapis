@@ -43,3 +43,4 @@ Dėl pagalbos kreipkitės į Justą.
     Norint išjungti serveri Cmd lange paspauskite `ctrl` + `c`
     
 # Baigta!
+SMAGU, KAD JAU STARTUOJAM!
