@@ -2,6 +2,7 @@
 
 .container-3{
     width: 100%;
+    max-width: 1500px;
     //padding: 0 3em;
     //z-index: -1;
     margin: 0 auto;
@@ -40,7 +41,9 @@
     }
     p{
         text-align: center;
-        font-size: 14px;
+        //font-size: 14px;
+        font-size: 1em;
+        min-height: 36px;
         margin-top: 5px;
     }
 }
@@ -54,10 +57,10 @@
     cursor: pointer;
 }
 .priv_arrow{
-    left: -35px;
+    left: 8px;
 }
 .next_arrow{
-    right: -35px;
+    right: 8px;
 }
 .slick-slide {
     outline: none;

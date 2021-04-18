@@ -1,8 +1,7 @@
 $(document).ready(function(){
     $('#Nariai .container-3 .carousel').slick({
-        rows: 2,
         draggable: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         speed: 1000,
         dots: true,
@@ -13,36 +12,40 @@ $(document).ready(function(){
         
         responsive: [
             {
-                breakpoint: 1600,
+                breakpoint: 1200,
                 settings: {
+                    arrows: false,
+                    draggable: true,
                     slidesToShow: 4,
                     slidesToScroll: 4,
                 }
             },
             {
-                breakpoint: 1200,
+                breakpoint: 850,
                 settings: {
                     rows: 2,
+                    arrows: false,
+                    draggable: true,
                     slidesToShow: 3,
                     slidesToScroll: 3,
                 }
             },
             {
-                breakpoint: 700,
+                breakpoint: 600,
                 settings: {
-                    rows: 2,
                     arrows: false,
                     draggable: true,
+                    rows: 3,
                     slidesToShow: 2,
                     slidesToScroll: 2,
                 }
             },
             {
-                breakpoint: 380,
+                breakpoint: 500,
                 settings: {
-                    rows: 3,
                     arrows: false,
                     draggable: true,
+                    rows: 3,
                     slidesToShow: 2,
                     slidesToScroll: 2,
                 }
