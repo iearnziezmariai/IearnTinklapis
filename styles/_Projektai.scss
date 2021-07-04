@@ -42,6 +42,7 @@ $green-5: #2f3e46;
     border-radius: $border-radius;
     width: $card-width;
     
+    min-height: 305px;
 
     div{
         overflow: hidden; 
@@ -50,6 +51,8 @@ $green-5: #2f3e46;
 
     h2{
         margin: 10px 20px;
+        font-size: 1.4em;
+        font-weight: 400;
     }
     
     img{
@@ -58,12 +61,26 @@ $green-5: #2f3e46;
         vertical-align: middle;
         object-fit: cover;
     }
-        p{
-            padding: 0 20px 15px 20px; 
-            margin: 0px;
-            color: $green-5;
-        }
 
+    p{
+        padding: 0 20px 15px 20px; 
+        margin: 0px;
+        color: $green-5;
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+}
+.daugiau_projektu{
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(242,242,242);
+    background-image: linear-gradient(-90deg, rgba(242,242,242,1) 0%, rgba(216,216,216,1) 100%);
+    
+    a{
+        text-decoration: none;
+
+    }
 }
 
 

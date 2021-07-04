@@ -38,6 +38,9 @@
     h2{
         text-align: center;
         margin-bottom: 5px;
+        font-size: 1.9em;
+        font-weight: 400;
+        color: $spalva-5;
     }
     p{
         text-align: center;
@@ -58,6 +61,7 @@
 }
 .priv_arrow{
     left: 8px;
+    z-index: 10000;
 }
 .next_arrow{
     right: 8px;

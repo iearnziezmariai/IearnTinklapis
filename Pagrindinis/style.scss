@@ -25,13 +25,13 @@
 }
 
 h1{
-    font-family: Nunito sans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Roboto,'Helvetica Neue', sans-serif;
     font-size: 2em;
     color: $spalva-4;
 }
 
 h2{
-    font-family: Nunito sans, 'Segoe UI', Tahoma, Geneva, sans-serif;
+    font-family: Roboto,'Helvetica Neue', sans-serif;
     font-size: 1.1em;
     font-weight: 500;
     color: $spalva-5;
@@ -47,26 +47,18 @@ html, body{
 }
 
 body{
-    font-family: Nunito sans;
+    font-family: Roboto,'Helvetica Neue', sans-serif;
     margin: 0;
     background-color: $background;
 }
 
 .landing-img{
-    padding-top: 2.5em;
-    height: 95vh;
-    //background-image: url('../images/Pagrindinis-img-backround.png');
-    background-color: $spalva-4;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-
-    img{
-        display: block;
-        margin: auto;
-        width: 100%;
-    }
+    margin-top: 3em;
+    height: 340px;
+    line-height: 340px;
+    text-align: center;
+    background-image: url("../images/Pagrindinis nuotrauka.png");
+    background-position: center;
 }
 .pad{
     padding-top: 40px;

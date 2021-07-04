@@ -10,6 +10,7 @@
           justify-content: space-between;
   height: 3em;
   z-index: 1000;
+  top: 0px;
 }
 
 .header a {
@@ -54,8 +55,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: Nunito sans;
-  color: #354f52;
+  font-family: Roboto,'Helvetica Neue', sans-serif;
+  color: #427A7E;
   text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -65,7 +66,7 @@
 
 /* Active klase uzdesim ant to linko, kuriame busim per kita koda */
 .active {
-  border-bottom: solid 2px #354f52;
+  border-bottom: solid 2px #427A7E;
 }
 
 @media only screen and (min-width: 768px) {
@@ -232,13 +233,13 @@
 h1 {
   font-family: 'Segoe UI', Verdana, Nunito sans, 'Segoe UI', Tahoma, Geneva, sans-serif;
   font-size: 2em;
-  color: #354f52;
+  color: #427A7E;
 }
 
 h2 {
   font-family: 'Segoe UI', Verdana, Nunito sans, 'Segoe UI', Tahoma, Geneva, sans-serif;
   font-size: 1.1em;
-  color: #354f52;
+  color: #427A7E;
 }
 
 p {
@@ -251,7 +252,7 @@ html, body {
 
 body {
   font-family: Segoe UI;
-  background-color: #cad2c5;
+  background-color: white;
   margin: 0;
 }
 

@@ -10,6 +10,7 @@
           justify-content: space-between;
   height: 3em;
   z-index: 1000;
+  top: 0px;
 }
 
 .header a {
@@ -54,8 +55,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: Nunito sans;
-  color: #354f52;
+  font-family: Roboto,'Helvetica Neue', sans-serif;
+  color: #427A7E;
   text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -65,152 +66,13 @@
 
 /* Active klase uzdesim ant to linko, kuriame busim per kita koda */
 .active {
-  border-bottom: solid 2px #354f52;
+  border-bottom: solid 2px #427A7E;
 }
 
 @media only screen and (min-width: 768px) {
   .nav-links {
     padding-right: 10px;
   }
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5em 0.8em;
-  border-radius: 8px;
-  color: white;
-  background-color: #52796f;
-  font-family: Nunito sans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-  text-decoration: none;
-  margin-right: 1em;
-  border: none;
-}
-
-.top-bar {
-  background-color: #2f3e46;
-  height: 2.5em;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 3em;
-}
-
-.top-bar ul {
-  margin: 0;
-  padding-left: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: space-between;
-}
-
-.top-bar ul li {
-  display: inline-block;
-  color: #f3f3f3;
-  font-size: 16px;
-  margin: 0 5px;
-}
-
-.top-bar ul li a {
-  list-style: none;
-  text-decoration: none;
-  font-style: italic;
-  color: #13aff0;
-}
-
-.side-menu {
-  height: 100vh;
-  width: 100%;
-  background: #2f3e46;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #2f3e46), to(#52796f));
-  background: linear-gradient(180deg, #2f3e46 10%, #52796f 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.menu-items {
-  margin: 0;
-  padding: 0;
-  padding-top: 3em;
-}
-
-.menu-items li {
-  list-style: none;
-}
-
-.menu-items a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 100%;
-  width: 100%;
-  line-height: 65px;
-  font-size: 20px;
-  color: white;
-  padding-left: 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.menu-items a img {
-  width: 30px;
-  height: 30px;
-  margin-right: 16px;
-}
-
-.menu-items a i {
-  margin-right: 16px;
-}
-
-.active-list a {
-  color: #00ccff;
-}
-
-.menu-items li:hover {
-  background-color: rgba(255, 255, 225, 0.055);
-}
-
-.atsijungti {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 3em;
-}
-
-.atsijungti a {
-  padding: 10px 60px;
-  background-color: #84a98c;
-  font-weight: 700;
-  font-size: 1em;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  color: white;
-  border-radius: 20px;
-  -webkit-transition: none;
-  transition: none;
-  text-decoration: none;
-}
-
-.atsijungti a:hover {
-  background-color: #ac0d0d;
 }
 
 .container-2 {
@@ -250,6 +112,7 @@
           box-shadow: 0 3px 22px 1px rgba(55, 48, 48, 0.09);
   border-radius: 20px;
   width: 16em;
+  min-height: 305px;
 }
 
 .card div {
@@ -259,6 +122,8 @@
 
 .card h2 {
   margin: 10px 20px;
+  font-size: 1.4em;
+  font-weight: 400;
 }
 
 .card img {
@@ -273,6 +138,22 @@
   padding: 0 20px 15px 20px;
   margin: 0px;
   color: #2f3e46;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.daugiau_projektu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f2f2f2), to(#d8d8d8));
+  background-image: linear-gradient(-90deg, #f2f2f2 0%, #d8d8d8 100%);
+}
+
+.daugiau_projektu a {
+  text-decoration: none;
 }
 
 /*@media only screen and (min-width: 560px){
@@ -296,7 +177,7 @@
 
 .footer-links h3 {
   font-weight: 400;
-  color: #cad2c5;
+  color: white;
 }
 
 .footer-links ul {
@@ -318,7 +199,7 @@
 
 .footer-links ul li a {
   text-decoration: none;
-  color: #cad2c5;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,7 +214,7 @@
 }
 
 .footer {
-  background-color: #354f52;
+  background-color: #427A7E;
   padding: 0 1em;
 }
 
