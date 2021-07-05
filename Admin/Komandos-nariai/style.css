@@ -12,9 +12,11 @@
   height: 3em;
   z-index: 1000;
   top: 0px;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
-.header a {
+.header .logolink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,56 +25,101 @@
           align-items: center;
 }
 
-.header a .logo {
+.header .logolink .logo {
   height: 2.5em;
   margin-left: 20px;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.header .nav-bar .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  padding: 0;
+.header .nav-bar {
+  display: contents;
+}
+
+.header .nav-links {
+  float: right;
   margin: 0;
-  margin-left: auto;
-  height: 100%;
-  padding-right: 10px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-right: 20px;
 }
 
-.header .nav-bar .nav-links li {
-  padding: 0 15px;
+.header .nav-links li {
+  display: inline-block;
+  line-height: 3em;
+  margin: 0 5px;
 }
 
-.header .nav-bar .nav-links li .nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header .nav-links li .nav-link {
   font-family: Roboto,'Helvetica Neue', sans-serif;
   color: #427A7E;
   text-decoration: none;
+  text-transform: uppercase;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.9em;
 }
 
+.checkbtn {
+  font-size: 34px;
+  color: #427A7E;
+  float: right;
+  line-height: 100%;
+  margin-right: 15px;
+  padding-top: 8px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
 /* Active klase uzdesim ant to linko, kuriame busim per kita koda */
-.active {
+.active a {
   border-bottom: solid 2px #427A7E;
 }
 
-@media only screen and (min-width: 768px) {
-  .nav-links {
-    padding-right: 10px;
+@media (max-width: 575px) {
+  .checkbtn {
+    display: block;
+  }
+  .header .nav-links {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #427A7E;
+    top: 3em;
+    right: 100%;
+    text-align: center;
+    padding: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0;
+  }
+  .header .nav-links li {
+    display: block;
+    font-size: x-large;
+    margin: 0;
+    line-height: 2em;
+  }
+  .header .nav-links li .nav-link {
+    display: block;
+    font-size: 1em;
+    color: white;
+    width: 100%;
+  }
+  .active a {
+    border-bottom: none;
+    color: #427A7E;
+  }
+  .header .nav-links .active, .header .nav-links li:hover {
+    background: white;
+  }
+  .header .nav-links .active a, .header .nav-links li:hover a {
+    color: #427A7E;
+  }
+  #check:checked ~ ul {
+    right: 0;
   }
 }
 

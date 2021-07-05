@@ -42,6 +42,10 @@ p{
     color: $spalva-5;
 }
 
+a{
+    text-decoration: none;
+}
+
 html, body{
     min-height: 100%;
 }
@@ -59,6 +63,7 @@ body{
     text-align: center;
     background-image: url("../images/Pagrindinis nuotrauka.png");
     background-position: center;
+    background-size: cover;
 }
 .pad{
     padding-top: 40px;
