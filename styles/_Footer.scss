@@ -1,11 +1,19 @@
 @import '_Spalvos.scss';
 
+.footer{
+    background-color: $spalva-4;
+    display: flex;
+    justify-content: center;
+    height: 230px;
+}
+    
 .footer-links{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     grid-template-rows: auto;
     grid-row-gap: 0px;
     grid-column-gap: 35px;
+    margin: auto 0;
     //padding: 0 30px;
     min-width: 18em;
     justify-items: center;
@@ -38,8 +46,3 @@
     }
 }
 
-.footer{
-    background-color: $spalva-4;
-    padding: 0 1em;
-}
-    

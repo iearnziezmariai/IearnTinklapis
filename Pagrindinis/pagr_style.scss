@@ -1,0 +1,55 @@
+@import '../styles/_Spalvos.scss';
+@import '../styles/_Header.scss';
+@import '../styles/_Projektai.scss';
+@import '../styles/_Footer.scss';
+@import '../styles/_Nariai.scss';
+@import '../styles/_ScrollBar.scss';
+
+h1{
+    font-family: Roboto,'Helvetica Neue', sans-serif;
+    font-size: 2em;
+    color: $spalva-4;
+}
+
+h2{
+    font-family: Roboto,'Helvetica Neue', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: $spalva-5;
+}
+
+p{
+    font-weight: 400;
+    color: $spalva-5;
+}
+
+a{
+    text-decoration: none;
+}
+
+html, body{
+    min-height: 100%;
+}
+
+body{
+    font-family: Roboto,'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: $background;
+}
+
+.landing-img{
+    height: 340px;
+    line-height: 340px;
+    text-align: center;
+    background-image: url("../images/Pagrindinis nuotrauka.png");
+    background-position: center;
+    background-size: cover;
+}
+.pad{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.base{
+    padding-top: 3em;
+    min-height: calc(100vh - (230px + 3em));
+}

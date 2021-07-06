@@ -126,6 +126,7 @@
   width: 100%;
   max-width: 1250px;
   z-index: -1;
+  margin: auto;
 }
 
 .container-2 h1 {
@@ -209,6 +210,17 @@
     }
 }
 */
+.footer {
+  background-color: #427A7E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 230px;
+}
+
 .footer-links {
   display: -ms-grid;
   display: grid;
@@ -218,6 +230,7 @@
       grid-template-rows: auto;
   grid-row-gap: 0px;
   grid-column-gap: 35px;
+  margin: auto 0;
   min-width: 18em;
   justify-items: center;
 }
@@ -258,23 +271,30 @@
   padding-right: 6px;
 }
 
-.footer {
-  background-color: #427A7E;
-  padding: 0 1em;
+h1 {
+  font-family: Roboto,'Helvetica Neue', sans-serif;
+  font-size: 2em;
+  color: #427A7E;
 }
 
-h1, h2 {
-  font-family: Nunito sans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  color: #324a5f;
+h2 {
+  font-family: Roboto,'Helvetica Neue', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #2f3e46;
 }
 
 p {
-  color: #707070;
+  font-weight: 400;
+  color: #2f3e46;
+}
+
+a {
+  text-decoration: none;
 }
 
 html, body {
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -302,26 +322,11 @@ body {
   width: 100%;
 }
 
+.base {
+  min-height: calc(100vh - 230px);
+}
+
 .pad {
   padding-top: 40px;
   padding-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .landing-img {
-    background-image: url("/images/landing-img-backround.png");
-  }
-}
-
-/*  Pakeisti mobile-landing-img kai landscape mode  */
-@media all and (orientation: landscape) {
-  .landing-img {
-    background-image: url("/images/landing-img-backround.png");
-  }
 }

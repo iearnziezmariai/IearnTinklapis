@@ -1,0 +1,76 @@
+@import '../styles/_Spalvos.scss';
+@import '../styles/_Header.scss';
+@import '../styles/_Projektai.scss';
+@import '../styles/_Footer.scss';
+@import '../styles/_ScrollBar.scss';
+
+$card-width: 23em;
+
+h1{
+    font-family: Roboto,'Helvetica Neue', sans-serif;
+    font-size: 2em;
+    color: $spalva-4;
+}
+
+h2{
+    font-family: Roboto,'Helvetica Neue', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: $spalva-5;
+}
+
+p{
+    font-weight: 400;
+    color: $spalva-5;
+}
+
+a{
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: Segoe UI;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.landing-img{
+    padding-top: 2.5em;
+    height: 95vh;
+    background-color: $blue-3;
+    background-image: url('/images/landing-img-backround.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    img{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+.base{
+    padding-top: 3em;
+    // minimalus content aukstis tam kad footer'is būtų nustumtas į apačia
+    // 230px footerio aukštis, 3em headerio aukštis
+    min-height: calc(100vh - (230px + 3em));
+}
+
+.pad{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card{
+    width: 100%;
+}
+
+.content{
+    grid-template-columns: repeat(auto-fill, minmax($card-width, 1fr));
+}
