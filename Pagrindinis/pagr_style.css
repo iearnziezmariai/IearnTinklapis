@@ -130,8 +130,12 @@
 }
 
 .container-2 h1 {
-  margin-top: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .content {
@@ -162,25 +166,32 @@
   width: 17em;
   min-height: 305px;
   max-width: 400px;
+  height: 100%;
 }
 
 .card div {
   overflow: hidden;
-  max-height: 9em;
+  /*
+        position: relative;
+        &:before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: (9 / 16) * 100%;
+        }
+        */
+}
+
+.card div img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  vertical-align: middle;
 }
 
 .card h2 {
   margin: 10px 20px;
   font-size: 1.4em;
   font-weight: 400;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-  vertical-align: middle;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .card p {
@@ -201,20 +212,49 @@
   background-image: linear-gradient(-90deg, #f2f2f2 0%, #d8d8d8 100%);
 }
 
-.daugiau_projektu a {
-  text-decoration: none;
-}
-
 .projects {
   padding: 0 30px;
 }
 
-/*@media only screen and (min-width: 560px){
-    .content{
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    }
+.pagination {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
 }
-*/
+
+.pagination a {
+  color: gray;
+}
+
+.pagination span {
+  margin: 0 0.7em;
+}
+
+.pag-arrow {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.outer {
+  position: relative;
+}
+
+.outer:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.outer > .inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: honeydew;
+}
+
 .footer {
   background-color: #427A7E;
   display: -webkit-box;
@@ -274,6 +314,23 @@
 .footer-links ul li a img {
   height: 1.5em;
   padding-right: 6px;
+}
+
+.base {
+  padding-top: 3em;
+  min-height: calc(100vh - (230px + 3em));
+}
+
+@media only screen and (max-width: 522px) {
+  .footer {
+    height: 400px;
+  }
+  .footer-links {
+    display: block;
+  }
+  .base {
+    min-height: calc(100vh - (400px + 3em));
+  }
 }
 
 .container-3 {
@@ -420,9 +477,8 @@ body {
 }
 
 .landing-img {
-  height: 340px;
-  line-height: 340px;
-  text-align: center;
+  height: 70vw;
+  max-height: 340px;
   background-image: url("../images/Pagrindinis nuotrauka.png");
   background-position: center;
   background-size: cover;
@@ -435,5 +491,4 @@ body {
 
 .base {
   padding-top: 3em;
-  min-height: calc(100vh - (230px + 3em));
 }

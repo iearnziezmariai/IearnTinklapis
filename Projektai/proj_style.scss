@@ -55,13 +55,6 @@ body{
     }
 }
 
-.base{
-    padding-top: 3em;
-    // minimalus content aukstis tam kad footer'is būtų nustumtas į apačia
-    // 230px footerio aukštis, 3em headerio aukštis
-    min-height: calc(100vh - (230px + 3em));
-}
-
 .pad{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -69,8 +62,24 @@ body{
 
 .card{
     width: 100%;
+
 }
 
 .content{
     grid-template-columns: repeat(auto-fill, minmax($card-width, 1fr));
+    transition: all 1s;
+}
+
+.base{
+    padding-top: 3em;
+}
+
+@media (max-width: 833px){
+    .card{
+        width: 17em;
+    }
+    
+    .content{
+        grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));
+    }
 }
