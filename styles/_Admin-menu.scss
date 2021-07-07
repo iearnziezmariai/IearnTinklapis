@@ -16,7 +16,7 @@
 }
 
 .top-bar{
-    background-color: $spalva-5;
+    background-color: $spalva-4;
     height: 2.5em;
     width: 100%;
     display: flex;
@@ -45,8 +45,7 @@
 .side-menu{
     height: 100vh;
     width: 100%;
-    background: rgb(47,62,70);
-    background: linear-gradient(180deg, $spalva-5 10%, $spalva-3 100%);
+    background: $spalva-4;
     
     display: flex;
     flex-direction: column;
@@ -88,7 +87,7 @@
     }
 }
 .menu-items li:hover{
-    background-color: rgba(255, 255, 225, 0.055);
+    background-color: $spalva-4;
 }
 .atsijungti{
     width: 100%;

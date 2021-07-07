@@ -16,31 +16,7 @@ body{
     background-color: $spalva-1;
 }
 
-.top-bar{
-    background-color: $spalva-5;
-    height: 2.5em;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    
-    ul{
-        margin: 0;
-        padding-left: 30px;
-        display: flex;
-        justify-items: space-between;
-        li{
-            display:inline-block;
-            color: rgb(243, 243, 243);
-            font-size: 16px;
-            margin: 0 5px;
-            a{
-                list-style: none;
-                text-decoration: none;
-            }
-        }
-        
-    }
-}
+
 .active-vieta{
     a{
         font-style: italic;
