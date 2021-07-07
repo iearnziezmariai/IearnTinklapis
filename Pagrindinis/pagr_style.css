@@ -124,7 +124,7 @@
 
 .container-2 {
   width: 100%;
-  max-width: 1250px;
+  max-width: 1300px;
   z-index: -1;
   margin: auto;
 }
@@ -141,8 +141,8 @@
 .content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(17em, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   justify-items: center;
@@ -163,8 +163,8 @@
   -webkit-box-shadow: 0 3px 22px 1px rgba(55, 48, 48, 0.09);
           box-shadow: 0 3px 22px 1px rgba(55, 48, 48, 0.09);
   border-radius: 20px;
-  width: 17em;
-  min-height: 305px;
+  width: 300px;
+  min-height: 360px;
   max-width: 400px;
   height: 100%;
 }
@@ -185,7 +185,9 @@
 .card div img {
   width: 100%;
   border-radius: 20px 20px 0 0;
-  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 .card h2 {
@@ -491,4 +493,23 @@ body {
 
 .base {
   padding-top: 3em;
+}
+
+@media (max-width: 1357px) {
+  .container-2 {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 1027px) {
+  .container-2 {
+    max-width: 630px;
+  }
+}
+
+@media (max-width: 697px) {
+  .card {
+    width: 17em;
+    min-height: 305px;
+  }
 }

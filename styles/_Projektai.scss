@@ -1,7 +1,7 @@
 @import '_Spalvos.scss';
 
 $border-radius: 20px;
-$card-width: 17em;
+$card-width: 300px;
 
 $blue-1: #0C1821;
 $blue-2: #1b2a41;
@@ -16,7 +16,7 @@ $green-5: #2f3e46;
 
 .container-2{
     width: 100%;
-    max-width: 1250px;
+    max-width: 1300px;
     z-index: -1;
     margin: auto;
     h1{
@@ -45,7 +45,7 @@ $green-5: #2f3e46;
     box-shadow: 0 3px 22px 1px rgba(55,48,48,.09);
     border-radius: $border-radius;
     width: $card-width;
-    min-height: 305px;
+    min-height: 360px;
     max-width: 400px;
     height: 100%;
 
@@ -64,7 +64,8 @@ $green-5: #2f3e46;
         img{
             width: 100%;
             border-radius: $border-radius $border-radius 0 0; 
-            vertical-align: middle;
+            object-fit: cover;
+            height: 100%;
         }
     }
 
@@ -135,3 +136,4 @@ $green-5: #2f3e46;
         background-color: honeydew;
     }
 }
+

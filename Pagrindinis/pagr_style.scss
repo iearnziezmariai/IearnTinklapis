@@ -51,3 +51,23 @@ body{
 .base{
     padding-top: 3em;
 }
+
+
+
+@media (max-width: 1357px){
+    .container-2{
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1027px){
+    .container-2{
+        max-width: 630px;
+    }
+}
+@media (max-width: 697px){
+    .card{
+        width: 17em;
+        min-height: 305px;
+    }
+}

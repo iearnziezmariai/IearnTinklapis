@@ -74,12 +74,22 @@ body{
     padding-top: 3em;
 }
 
+@media (max-width: 1231px){
+    .container-2{
+        max-width: 833px;
+    }
+}
+
 @media (max-width: 833px){
     .card{
         width: 17em;
+        min-height: 305px;
     }
     
     .content{
         grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));
+    }
+    .container-2{
+        max-width: 574px;
     }
 }
