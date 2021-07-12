@@ -300,7 +300,6 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 1.1rem;
 }
 
 table a {
@@ -445,4 +444,11 @@ input, textarea {
   display: grid;
   -ms-grid-columns: 300px auto;
       grid-template-columns: 300px auto;
+}
+
+.mintis {
+  max-width: 700px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
