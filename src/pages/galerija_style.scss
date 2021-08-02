@@ -1,0 +1,182 @@
+@import "../styles/_Spalvos.scss";
+@import "../styles/_ScrollBar.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  color: $spalva-4;
+  text-align: center;
+}
+
+h2 {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: $spalva-5;
+}
+img {
+  display: block;
+}
+.fa-file-image {
+  height: 100%;
+  font-size: 500%;
+  color: $spalva-1;
+}
+p {
+  font-weight: 400;
+  color: $spalva-5;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: Segoe UI;
+  margin: 0;
+  background-color: $background;
+}
+
+.base {
+  padding-top: 3em;
+}
+.container {
+  font-size: 10px;
+  max-width: 78.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.2rem -0.2rem;
+  padding-bottom: 3rem;
+}
+
+.gallery-item {
+  position: relative;
+  flex: 1 0 15rem;
+  margin: 0.2rem;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background: white;
+  overflow: hidden;
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+.gallery-image {
+  width: 100%;
+  height: 15rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery-item:hover .gallery-image {
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.gallery-item-likes {
+  margin-right: 2.2rem;
+}
+
+.gallery-item-type {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.15));
+}
+
+.fa-clone,
+.fa-comment {
+  transform: rotateY(180deg);
+}
+
+// .gallery-image {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+.filtering {
+  padding: 1rem;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: $spalva-4;
+  cursor: pointer;
+  width: 10rem;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: $spalva-4;
+  cursor: pointer;
+  pointer-events: none;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 0.4rem;
+  }
+  .gallery-item,
+  .gallery {
+    width: auto;
+    margin: 0;
+  }
+}

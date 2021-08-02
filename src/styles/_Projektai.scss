@@ -1,0 +1,121 @@
+@import "_Spalvos.scss";
+
+$border-radius: 20px;
+$card-width: 300px;
+.container-2 {
+  width: 100%;
+  z-index: -1;
+  h1 {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    width: fit-content;
+  }
+}
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card {
+  // display: flex;
+  // flex-direction: column;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 3px 22px 1px rgba(55, 48, 48, 0.09);
+  border-radius: $border-radius;
+  width: $card-width;
+  min-height: 360px;
+  max-width: 400px;
+  height: 100%;
+  margin: 10px;
+  a {
+    width: 100%;
+    width: 100%;
+  }
+  div {
+    overflow: hidden;
+    img {
+      width: 100%;
+      border-radius: $border-radius $border-radius 0 0;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  h2 {
+    margin: 10px 20px;
+    font-size: 1.4em;
+    font-weight: 400;
+  }
+
+  p {
+    padding: 0 20px 15px 20px;
+    margin: 0px;
+    color: $spalva-5;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}
+.daugiau_projektu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(242, 242, 242);
+  box-shadow: none;
+  background-image: linear-gradient(
+    -90deg,
+    rgba(242, 242, 242, 1) 0%,
+    rgba(216, 216, 216, 1) 100%
+  );
+}
+
+.projects {
+  padding: 40px 30px;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+
+  a {
+    color: gray;
+  }
+
+  span {
+    margin: 0 0.7em;
+  }
+}
+
+.pag-arrow {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.outer {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: (9 / 16) * 100%;
+  }
+  > .inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    border-radius: $border-radius $border-radius 0 0;
+    svg {
+      height: 100%;
+      font-size: 500%;
+      color: $spalva-1;
+    }
+  }
+}
